@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="header">
+        <h1 class="head">Food is love</h1>
+        <p class="content">Every day, we all want to consume great and delicious cuisine. There are many different varieties of food accessible all throughout the world. Food comes in a wide variety all around the world. Dosa, Paneer, Naan, Chapati, Biryani, and more Indian delicacies are available.</p>
+        <div class="container">
+            <form class="formInput" id="sub">
+                <input type="text" id="search" placeholder="Enter the Category eg: seafood">
+                <button class="search" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="ran" id="random">Random</button>
+        </div>
+    </section><br>
+    <p id="random-heading" class="heading"></p>
+    <div class="cont">
+        <section class="rdm">
+            <div class="random-meal" id="random-meal"></div>
+        </section>
+        <hr> 
+        <section class="srch">
+            <p id="category-heading" class="heading"></p>
+            <div class="search-results" id="search-results"></div>
+        </section>
+    </div>
+
+    <div id="modal-container" class="modal-container">
+        <div class="modal-content">
+            <span class="close">X</span>
+            <h2 id="modal-title">Ingredients</h2>
+            <ul id="modal-ingredients"></ul>
+        </div>
+    </div>
+
+    <script src="food.js"></script>
+</body>
+</html>
